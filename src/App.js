@@ -98,6 +98,7 @@ class App extends Component {
           )
         }
         if (resData.errors) {
+          console.log(resData.errors);
           throw new Error("User login failed!");
         }
         console.log(resData);
